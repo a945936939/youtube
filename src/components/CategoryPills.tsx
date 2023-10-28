@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Button } from "./Button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 type CategoryPillProps = {
@@ -13,14 +13,28 @@ export default function CategoryPills({
   onSelect,
 }: CategoryPillProps) {
   const [translate, setTranslate] = useState(0);
-  const [isLeftVisible, setIsLeftVisible] = useState(true);
-  const [isRightVisible, setIsRightVisible] = useState(true);
+  const [isLeftVisible, setIsLeftVisible] = useState(false);
+  const [isRightVisible, setIsRightVisible] = useState(false);
   const TRANSLATE_AMOUNT = 200;
   const containerRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (containerRef.current == null) return;
+    const observer = new ResizeObserver((entries) => {
+      const container = containerRef.current;
+      if (container == null) return;
+      setIsLeftVisible(translate > 0);
+      setIsRightVisible(
+        translate + container.clientWidth < container.scrollWidth
+      );
+    });
+    observer.observe(containerRef.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, [categories, translate]);
   return (
-    <div className="overflow-x-hidden relative">
+    <div className="overflow-x-hidden relative" ref={containerRef}> 
       <div
-        ref={containerRef}
         className="flex whitespace-nowrap gap-3 transition-transform w-[max-content]"
         style={{ transform: `translateX(-${translate}px` }}
       >
@@ -63,6 +77,16 @@ export default function CategoryPills({
             variant="ghost"
             size="icon"
             className="h-full aspect-square w-auto p-1.5"
+            onClick={() => {
+              if (containerRef.current == null) return translate;
+              const newTranslate = translate + TRANSLATE_AMOUNT;
+              const edge = containerRef.current.scrollWidth;
+              const width = containerRef.current.clientWidth;
+              setTranslate((translate) => {
+                if (newTranslate + width >= edge) return edge - width;
+                return newTranslate;
+              });
+            }}
           >
             <ChevronRight />
           </Button>
