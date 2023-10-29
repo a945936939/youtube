@@ -46,7 +46,7 @@ export default function VideoGridItem({
       onMouseEnter={() => setIsVideoPlaying(true)}
       onMouseLeave={() => setIsVideoPlaying(false)}
     >
-      <a href={`/watch?v=${id}`} className="relative aspect-video">
+      <a href={`https://www.youtube.com/`} className="relative aspect-video">
         <img
           src={thumbnailUrl}
           className={`block w-full h-full object-cover transition-[border-radius] duration-200 ${
