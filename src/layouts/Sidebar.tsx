@@ -130,45 +130,45 @@ export function Sidebar() {
           <LargeSidebarItem
             IconOrImgUrl={Flame}
             title="Trending"
-            url="/trending"
+            url="https://www.youtube.com/feed/trending"
           />
+
           <LargeSidebarItem
-            IconOrImgUrl={ShoppingBag}
-            title="Shopping"
-            url="/shopping"
+            IconOrImgUrl={Music2}
+            title="Music"
+            url="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"
           />
-          <LargeSidebarItem IconOrImgUrl={Music2} title="Music" url="/music" />
           <LargeSidebarItem
             IconOrImgUrl={Film}
             title="Movies & TV"
-            url="/movies-tv"
+            url="https://www.youtube.com/feed/storefront?bp=ogUCKAI%3D"
           />
           <LargeSidebarItem IconOrImgUrl={Radio} title="Live" url="/live" />
           <LargeSidebarItem
             IconOrImgUrl={Gamepad2}
             title="Gaming"
-            url="/gaming"
+            url="https://www.youtube.com/gaming"
           />
           <LargeSidebarItem IconOrImgUrl={Newspaper} title="News" url="/news" />
           <LargeSidebarItem
             IconOrImgUrl={Trophy}
             title="Sports"
-            url="/sports"
+            url="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"
           />
           <LargeSidebarItem
             IconOrImgUrl={Lightbulb}
             title="Learning"
-            url="/learning"
+            url="https://www.youtube.com/channel/UCtFRv9O2AHqOZjjynzrv-xg"
           />
           <LargeSidebarItem
             IconOrImgUrl={Shirt}
             title="Fashion & Beauty"
-            url="/fashion-beauty"
+            url="https://www.youtube.com/channel/UCrpQ4p1Ql_hG8rKXIKM1MOQ"
           />
           <LargeSidebarItem
             IconOrImgUrl={Podcast}
             title="Podcasts"
-            url="/podcasts"
+            url="https://www.youtube.com/podcasts"
           />
         </LargeSidebarSection>
       </aside>
