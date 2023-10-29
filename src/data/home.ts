@@ -144,4 +144,55 @@ export const videos = [
     videoUrl:
       "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
+  {
+    id: "9",
+    title: "Zig in 100 Seconds",
+    channel: {
+      name: "Mr.Beast",
+      id: "Mr.Beast",
+      profileUrl:
+        "https://yt3.ggpht.com/ytc/APkrFKbAfC_5NBQ3CM6Lyd2zXUFbC4mym1GCRhmpIwcMXg=s68-c-k-c0x00ffffff-no-rj        ",
+    },
+    views: 120323340,
+    postedAt: new Date("2023-10-09"),
+    duration: 105,
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/3ryID_SwU5E/hq720_custom_2.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgnIGEocjAP&rs=AOn4CLC7oShoL-NvLsKIKITIq9AaIJ9rSA",
+    videoUrl:
+      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  },
+  {
+    id: "10",
+    title: "Havard CS50(2023) - Full Computer Science University Course",
+    channel: {
+      name: "freeCodeCamp.org",
+      id: "freeCodeCamp.org",
+      profileUrl:
+        "https://yt3.ggpht.com/ytc/APkrFKaqca-xQcJtp1Pqv-APucCa0nToHYGPVT00YBGOSw=s68-c-k-c0x00ffffff-no-rj",
+    },
+    views: 206233,
+    postedAt: new Date("2023-09-09"),
+    duration: 105,
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/LfaMVlDaQ24/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBBTLPKJLcW9aKi-uWZ7_sXOHhA0w",
+    videoUrl:
+      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  },
+  {
+    id: "11",
+    title: "One Hour Of Red Pandas Eating Crunchy Snacks",
+    channel: {
+      name: "Oregon Zoo",
+      id: "Oregon Zoo",
+      profileUrl:
+        "https://yt3.ggpht.com/tusrhAEJqDN5SDm95_8Q6MFcQsThGDmftnTCp1qQEVcUeA_Xk9TMx2W1Jmou83nWS3zphNOIOg=s68-c-k-c0x00ffffff-no-rj",
+    },
+    views: 2033340,
+    postedAt: new Date("2022-09-09"),
+    duration: 105,
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/UBcVbAFntQo/hq720.jpg?sqp=-oaymwExCNAFEJQDSFryq4qpAyMIARUAAIhCGAHwAQH4AdQGgALgA4oCDAgAEAEYTCBKKGUwDw==&rs=AOn4CLDzeN6H2xI_PSZBjGZxjUkahlMMyQ",
+    videoUrl:
+      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  },
 ];
